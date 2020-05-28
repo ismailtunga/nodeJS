@@ -6,7 +6,7 @@ const routeHandler = (req,res)=>{
     const method = req.method;
     res.setHeader('Content-Type','text/html');
     if(url === '/'){
-        res.write('<html><head><title>Mesajınızı girin...</title></head>');
+        res.write('<html><head><title>pending message...</title></head>');
         res.write('<body><form method="POST" action="/log">');
         res.write('<input type="text" name="message">');
         res.write('<button type="submit">Kaydet</button>');
